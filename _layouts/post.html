@@ -7,6 +7,20 @@ layout: default
 	<div class="center">
 		<h1 class="title">{{ page.title }}</h1>
 		<time class="code">{{ page.date | date: '%B %-d, %Y' }}</time>
+			{% case m %}
+					{% when '1' %}Ocak
+					{% when '2' %}Şubak
+					{% when '3' %}mart
+					{% when '4' %}Nisan
+					{% when '5' %}Mayıs
+					{% when '6' %}Haziran
+					{% when '7' %}Temmuz
+					{% when '8' %}Ağuştos
+					{% when '9' %}Eylül
+					{% when '10' %}Ekim
+					{% when '11' %}Kasım
+					{% when '12' %}Aralık
+			{% endcase %}
 	</div>
 
 	<div class="divider"></div>
