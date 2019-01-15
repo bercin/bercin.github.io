@@ -8,7 +8,7 @@ logo_url:           https://avatars2.githubusercontent.com/u/7534431?v=4 # Get i
 url:                https://bercin.github.io # main url
 baseurl:            /
 permalink:          /:title # Post permalink
-timezone:           Asia/Kuala_Lumpur # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:           Europe/Istanbul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 mathjax:            true  # enables support for mathjax - set to 'false' to disable
 
 # Site Build
