@@ -1,6 +1,6 @@
 ---
 title: Linux Terminal Komutları
-updated: 2019-18-01 11:59
+updated: 2019-01-18 11:59
 ---
 
 ### Temel Komutlar
