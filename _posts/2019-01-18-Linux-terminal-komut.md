@@ -25,7 +25,7 @@ updated: 2019-01-18 11:59
 
 **cat** : Düz metin dosyalarının içeriğini ekrana yazar. Diğer bir parametresi **cat > 'yeni dosya'** --> yeni dosya açıp içine yazı yazmamızı sağlar, yazı yazdıktan sonra çıkmak için ctrl + d 'e basarak çıkabilirsiniz.
 
-**less** : Bir dosya içeriği veya komut sonucunu ekranda sayfalı bir şekilde gösterir (ileri - geri ) hareketlere izin verir. kullanım ; **less dosyaAdi** dosyanın içine girer, terminal dosya haline bürünür, çıkmak için **q** 'a basarız. ör ; **ls -la &#124; less** şeklinde de konut çıktısı üzerinde kullanabiliriz.
+**less** : Bir dosya içeriği veya komut sonucunu ekranda sayfalı bir şekilde gösterir (ileri - geri ) hareketlere izin verir. kullanım ; **less dosyaAdi** dosyanın içine girer, terminal dosya haline bürünür, çıkmak için **q** 'a basarız. ör ; **ls -la l less** şeklinde de konut çıktısı üzerinde kullanabiliriz.
 
 **rm** : (_Remove_) Dosya silmek için kullanırız.
 
