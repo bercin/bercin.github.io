@@ -36,9 +36,22 @@ updated: 2019-01-18 11:59
 
 **mv** : (_move_) Dosya ve dizin taşımak için kullanımı vardır, taşıdığımız dosyanın ismini değiştirmemizi de sağlar. Kullanım ; **mv dosyaAdi TaşımaYolu/YeniAdı** şeklinde kullanabiliriz. ör ; **mv denemeDosyasi ../TestDosyasi** --> denemeDosyasi dosyasini bir üst dizine TestDosyasi dosyasi adında taşıdık.
 
+**find** : Dosyalarınızı Bulmak, aramak için kullanılır, Kullanım ; **find -name AranacakKelimeİsim** 
+
+**help ve man** : Yardım alma komutudur, Kullanım ; **ls --help** ls komutu hakkında yardım bilgilerini gösterir. 
+**man ls** ls komutu hakkında yardım bilgilerini gösterir. "q" 'a basarak ekrandan çıkabilirsiniz.
+
+**history** : Terminalde yazdığınız her şeyin bir nevi logu'nu tutar. _.bash_history_ dosyasında bu bilgileri tutmaktadır.
+
+**clear** : Dolan terminal ekranı temizlemek için kullanılır.
+
+**date** : Tarihi gösterir.
+
+**cal** : Ekrana takvim basar. Ekrana istediğiniz bir yıla ait takvim basabilirsiniz. Kullanım ; **cal 1992**
+
+**exit** : Terminalden çıkış yapmamıza yarıyor.
 
 
-
-
+* _Bilgi paylaştıkça çoğalır_
 
 
