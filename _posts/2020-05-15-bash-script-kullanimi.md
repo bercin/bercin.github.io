@@ -11,13 +11,20 @@ Bash script Unix'te mevcut olan programlama araçlarından biridir. Bash Script'
 
  Sistemde kullanılabilir shell programlarını görmek için terminal komut satırına `cat/etc/shells` yazıp çalıştırdığımızda görebiliriz. Terminalde hangi shell'de çalıştığımızı görmek için `which bash` yazdığımızda bize yolunu gösterecektir.
  
- ###### [ ilk uygulamamızı yazalım ]
+ ######  ilk uygulamamızı yazalım 
  Ben unix sistemlerde bulunan `vi` editörü kullanarak uygulamayı yazacağım.
  Terminal ekranından `vi uyg-1.sh` yazdığımda editor boş bir sayfa açıyor aşağıdaki komutları yazıp klavyeden `esc` basıyoruz sonra `:wq!` yazıyoruz. Bu işlem `vi` editöründe yapılan değişiklikleri kaydet ve çık anlamına gelmektedir.  Kaydetmeden çıkmak için ise `:q!` yazmamız yeterli.
- ```bash script
+
+ ```python
  #! /bin/bash
 
  echo "merhaba dünya !"
  ```
 
 yazdığımız uygulamayı şimdi çalıştıralım. Terminalde yazdığımız uygulamanın bulunduğu dizine gidip bu komutu  `./uyg-1.sh` yazdığımızda uygulamanın çalışması gerekmektedir.
+
+![uyg-1](../assets/bash-scripts/1.png)
+
+Ekranda görüldüğü gibi `Permission denied` hatası verdi, bunun sebebi ise uygulama dosyamız `executable` çalıştırıla bilir dosya olmadığı için bu hatayı verdi.
+
+Uygulama dosyamıza yetki verelim bunun için komut satırına  `chmod +x uyg-1.sh` yazmamız gerekmektdir. 
