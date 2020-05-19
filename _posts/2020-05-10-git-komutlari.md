@@ -28,19 +28,24 @@ Temel akış şeması bu şekildedir.
 Git proje dosyası oluşturmak için  terminalden masaüstüne oluşturduğumuz `bercin.org` dizinine disilir. `git init` komutu yazılır ve burada git deposu oluşturulur. 
 
 Ben burada github'da depoladığım jeykll blog sitemin dosyalarını github'dan indirip git deposunda depolayacağım. indirmek için `git clone https://github.com/bercin/bercin.github.io.git` komutunu kullanıyoruz. 
+
 ****
 #### | git add
 Şimdi git deposuna ekleyelim `git add .` burada kullandığımız nokta  ` . `  bulunduğumuz dizinde ki dosyaları ekle anlamına gelmektedir. Şuan dosyalarımız geçiş bölgesindedir. Git deposuna eklemek için ise **commit** yapmamız gerekmektedir. `git commit -m "mesaj içeriği" `  _mesaj içeriği_ aldığımız versiyonu belirtir nitelikte olabilir. Aldığımız versiyonları listelemek için ` git log ` komutunu kullanabiliriz.
+
 ****
+
 #### | git status
 ` git status ` komutu projede yapılan herhangi bir değişikliği gösterir. Git deposu ile projeniz arasında değişiklik var ise bunu size gösterecektir. Projemizde yeni bir sayfa oluşturup depoya eklemek için geçiş bölgesine ekleyelim ` git add yeniSayfa.md ` şimdi ` git staus ` dediğimizde geçiş bölgesinde commit edilmeyi bekleyen dosya olduğunu göreceğiz. 
 Gördükten sonra git deposuna ` git commit -m "yeniSafya eklendi" ` komutuyla ekleyebiliriz. 
+
 ****
 #### | git diff
 `git diff` komutu yapılan değişiklikleri `status` komutundan farklı olarak değişikliğin detayını da bizi göstermektedir. **Örnek;** Blog sayfamızda bulunan makalemize ekleme yaptık, git depomuza göndereceğiz göndermede önce kontrol etmek istersek `git diff` komutu ile eklenen satırları + ve yeşil renkte bize gösterecektir, silinen satırlar var ise de - kırmızı renkte gösterecektir.
 
 **Not:**  **git diff** `Çalışma Dizini` ile `Geçiş Bölgesi` arasında ki farkları gösterir.
 **git diff --staged** ise `Geçiş Bölgesi` ile `Git Deposu` arasındaki farkları gösterir.
+
 ****
 #### | git rm (dosya silme)
 İki farklı şekilde dosya silme işlemi vardır.
@@ -55,6 +60,7 @@ Bu işlem görüldüğü gibi uzun bir yöntem, 2. işlem ise daha kısadır.
 **2. Komut ile dosya silme;** Burada yapmamız gereken tek şey terminal komut satırından `git rm yeniSayfa.md` yazmak ve sonrasında `git commit -m "yeniSafta.md dosyası silindi."` komutu ile git deposuna eklemek/bildirmek. 
 
 Dizin/Klasör silmek için ise `git rm -r DizinKlasörAdı/` komutunu çalıştırmak ve git deposuna eklemek/bildirmek.
+
 ****
 #### | git mv (dosya adı değiştirme / dosya taşıma)
 İki farklı şekilde dosya silme işlemi vardır.
@@ -69,7 +75,8 @@ Bu işlem görüldüğü gibi uzun bir yöntem, 2. işlem ise daha kısadır.
 Git deposuna göndermeden önce  `git status` ile isin değişikliği bilgisini ekrandan görebiliriz.
 
 Dizin/Klasör/Dosya taşımak için ise `git mv DizinKlasörDosyaAdı/ yeniDizinKlasorDosyaadi/` komutunu çalıştırmak ve git deposuna eklemek/bildirmek.
-***
+
+****
 
 #### | git checkout (değişiklikleri geri alma)
 ###### Çalışma Dizini
@@ -79,6 +86,9 @@ Bu değişiklikleri yada silinen dosyayı geri almak için `git checkout -- yeni
 
 ###### Geçiş Bölgesi
 Burada **Çalışma Dizini**'n de ki senaryonun aynısı dosyayı sildiğimizi yada değişiklik yaptığımızı farz edelim. `git add .` ile Geçiş bölgesine ekledik. `git status` ile kontrol ettiğimiz de eklendiğini gördük fakat yanlış bir işlem yaptığımızı fark ettik geri almak için `git reset HEAD yeniSayfa.md` komutunu kullanırız. Tekrar konrol ettiğimiz de işlemin **Geçiş bölgesinden** geri alındığını gördük fakat hala **Çalışma dizininden** geri alındığını görmedik burada `git checkout -- yeniSayfa.md` komutunu kullanırız ve tamamen silme/değiştirme işlemini geri almış oluruz.
+
+###### Versiyon Geri almak
+
 
 
 
