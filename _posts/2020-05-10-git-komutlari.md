@@ -88,8 +88,45 @@ Bu değişiklikleri yada silinen dosyayı geri almak için `git checkout -- yeni
 Burada **Çalışma Dizini**'n de ki senaryonun aynısı dosyayı sildiğimizi yada değişiklik yaptığımızı farz edelim. `git add .` ile Geçiş bölgesine ekledik. `git status` ile kontrol ettiğimiz de eklendiğini gördük fakat yanlış bir işlem yaptığımızı fark ettik geri almak için `git reset HEAD yeniSayfa.md` komutunu kullanırız. Tekrar konrol ettiğimiz de işlemin **Geçiş bölgesinden** geri alındığını gördük fakat hala **Çalışma dizininden** geri alındığını görmedik burada `git checkout -- yeniSayfa.md` komutunu kullanırız ve tamamen silme/değiştirme işlemini geri almış oluruz.
 
 ###### Versiyon Geri almak
+Bir önceki versiyona geçmek için `git log` komutu ile alınan versiyonları listeliyoruz.
+hangi versiyona geçmek istiyorsak o versiyonun hash kodunu kullanıp o versiyone geçeceğiz.
+`git checkout 55dvm5kmm5fdffsdf88f8d8fd8f8sdfv  -- . ` Son daki nokta (.) projemde ki tüm dosyaları bir önceki versiyondaki haline getir anlamına gelmektedir. Nokta  yerine dosya ismi yazıp sadece o dosyayı eski haline getirebiliriz. Sonrasında `git status ` ile dosyalardaki değişiklikleri görürüz ve commit ederiz. `git commit -m " **bir önceki versiyona dönüş yaıldı.** " `
+
+****
+
+### | github 'a proje gönderme 
+Github'da projeniz var ise onu local'inize clone edebilir, `git clone https://github.com/bercin/bercin.github.io.git` yada yeni bir repository oluşturabilirsiniz. 
+
+Yeni repository oluşturmak için github hesabınınıza girip Repositories > New > create a new repository diyerek, repository name belirleyerek repositorymizi oluşturabiliriz.
+Oluşturduğumuz repositorynin linkini kopyalarız. 
+
+Göndermek istediğimiz projenin dizinin de ` git remote add bercinBlog https://github.com/bercin/bercin.github.io.git ` burada yazdığımız `bercinBlog`gitbub bağlantısının takma adı buraya herhangi bir şey de yazıla bilir. Bağlantımız oluştu mu kontrol edelim `git remote ` dediğimiz de ekrana `bercinBlog`
+
+Github'a projemizin dosyalarını göndermek için `git push -u bercinBlog master ` komutunu gireriz. -u : Bütün dosyaları gönder anlamında kullanılır. master ise github projemizin ana dalıdır. 
+
+şimdi kullanıcı adımızı istiyor burada github kullanıcı adımızı sonrasında ise şifremizi yazıyoruz. ve ekranda projenin gönderilip gönderilmediği ile ilgili bilgilerden projemizin github'a yüklendiğini anlıyoruz.
 
 
+****
+
+
+### | .gitignore kullanımı
+
+GIT tarafından takip edilmesini istemediğimiz dosyalar var ise .gitignore adlı dosya oluşturup içeriine takip edilmesini istemediğimiz dosya isimlerini yazıyoruz, git daha sonra bu dosyaları görmezden geliyor. 
+
+Bir tane örnek yapalım ; projemizde database dosyası olduğunu düşünelim `db_config` adında `.gitignore` dosyası oluşturalım, bu dosyanın başında (.) olduğu için linux sistemlerde gizli dosya anlamına gelmektedir, o yüzden ekrandan gözükmeyecektir terminal ile açıp düzenleye bilirsiniz. windows sistemlerde normal dosya olarak gözükeceği için herhangi bir text editörü ile açıp düzenleye bilirsiniz. Bu dosyayı ouşturup içine de `db_config` yazdık, `git status` ile kontrol ettiğimizde sadece git depoya gönderilmesi gereken dosyanın `.gitignore` olduğunu göreceksiniz. 
+
+Şimdi gelişmiş bir başka örnek yapalım ; Bir tane klasör  var içinde de 3 tane dosya var biz bu klasör ve içinde ki 3 dosyayı depoya göndermeyelim bunun için  `.gitignore` dosyasına `klasörIsmi/*` yazdığımızda bu klasör ve dosyaları göndermeyecektir. peki 1 tanesini göndermek ister ise bu sefer de `!klasötIsmi/abc_conf` şeklinde ekleme yaptığımızda sadece klasör içinde ki `abc_conf` dosyasını depoya göndermiş oluruz. 
+
+
+****
+
+
+### | Branches (Dallar)
+
+`git branch` ile projede ki mevcut dalları listeler, uzak depoda bulunan dalları listelemek için `git branch --all`  komutunu kullanabiliriz. 
+yeni bir dal oluşturmak için `git branch yenidal2` komutunu kullandık, tekrar oluştuğunu görmek için `git branch` dediğimizde mevcut dalları listeleyecektir ve burada yeni ouşan dalı göreceğiz.
+Yeni oluşturulan `yandal2` ye geçmek için `git checkout yandel2` komutunu kullanırız. kontrol için `git branch` komutunu kullanırız. yenisal2 de dosya oluşturup `git add .` sonra `git commit -m "yenidal2 de yeni dosya" ` kaydederiz. Şimdi brancları birleşterelim bunun için master branch a geçmemiz gerekmektedir. 
 
 
 Bilgiyle kalın..
