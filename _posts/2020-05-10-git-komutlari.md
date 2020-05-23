@@ -124,9 +124,10 @@ Bir tane örnek yapalım ; projemizde database dosyası olduğunu düşünelim `
 
 ### | Branches (Dallar)
 
-`git branch` ile projede ki mevcut dalları listeler, uzak depoda bulunan dalları listelemek için `git branch --all`  komutunu kullanabiliriz. 
-yeni bir dal oluşturmak için `git branch yenidal2` komutunu kullandık, tekrar oluştuğunu görmek için `git branch` dediğimizde mevcut dalları listeleyecektir ve burada yeni ouşan dalı göreceğiz.
-Yeni oluşturulan `yandal2` ye geçmek için `git checkout yandel2` komutunu kullanırız. kontrol için `git branch` komutunu kullanırız. yenisal2 de dosya oluşturup `git add .` sonra `git commit -m "yenidal2 de yeni dosya" ` kaydederiz. Şimdi brancları birleşterelim bunun için master branch a geçmemiz gerekmektedir. 
+`git branch` ile projede ki mevcut dalları listeler, uzak depoda bulunan dalları listelemek için `git branch --all`  komutunu kullanırız. Yeni bir dal oluşturmak için `git branch yenidal2` komutunu kullandık, tekrar oluştuğunu görmek için `git branch` dediğimizde mevcut dalları listeleyecektir ve burada yeni oluşan dalı göreceğiz.
+
+Yeni oluşturulan `yandal2` dalına geçmek için `git checkout yandel2` komutunu kullanırız. Kontrol için `git branch` komutunu kullanırız. yenidal2 de dosya oluşturup `git add .` sonra `git commit -m "yenidal2 de yeni dosya" ` kaydederiz. Şimdi brancları birleşterelim bunun için master branch a geçmemiz gerekmektedir. ` git checkout master ` ile master dalına geçeriz. master ile yandal2 arasında ki farkları görmek için ` git diff master yandal2 ` dediğimizde ekranda arasındaki farkları gösterecektir. master ile yandal2 yi birleştirmek için ` git merge yandal2` komutunu kullanırız. Bu değişiklikleri github'a göndermek için `git push -u bercinBlog master ` komutunu kullanırız. 
+
 
 
 Bilgiyle kalın..
