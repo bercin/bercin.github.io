@@ -10,6 +10,12 @@ Terminal komut satırında `vi .bashrc` ile .bashrc dosyasının içine giriyoru
 ![vi .bashrc](../assets/kisa-kisa-linux/dosya-yolu-gizleme.png) [Resmi Büyütmek için bu yazıya tıklayın !](../assets/kisa-kisa-linux/dosya-yolu-gizleme.png){:.lightbox}
 
 
+##### Dosya veya Dizin Boyutu 
+` du -sh * ` ya da `du -sh DizinAdi` şeklinde bakabilirsiniz.
+
+Komut | Açıklama | Örnek Kullanım | Örnek Açıklaması
+--- | --- | --- | --- | 
+`du -sh` | Dizin, Dosya boyutu | `du -sh *` | * parametresini dizinde ki tüm klasör ve dosya boyununu verir.
 
 
 
