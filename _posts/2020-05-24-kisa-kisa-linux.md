@@ -11,7 +11,7 @@ Komut | Açıklama | Örnek Kullanım | Örnek Açıklaması
 **du -sh** | Dizin, Dosya boyutu | **du -sh ** | " * "  dizinde ki tüm klasör ve dosya boyununu verir.
 **cat -n** | Satır sayısını öğrenmek | **cat -n rb.txt** | satırları satır sayısı ile birlikte gösterir.
 **wc -l** | Toplam satır sayısı | **wc -l rb.txt** | Satır sayısını ve dosya adını verir.
-**last** | Sunucuya girişleri gösterir | **last | head -10** | Sunucuya son 10 girişi verir.
+**last** | Sunucuya girişleri gösterir | **last \|head -10** | Sunucuya son 10 girişi verir.
 
 ---
 
