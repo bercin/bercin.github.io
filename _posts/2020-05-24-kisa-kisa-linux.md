@@ -9,7 +9,7 @@ Terminal komut satırında `vi .bashrc` ile .bashrc dosyasının içine giriyoru
 
 ![vi .bashrc](../assets/kisa-kisa-linux/dosya-yolu-gizleme.png){:.lightbox}
 [vi .bashrc](../assets/kisa-kisa-linux/dosya-yolu-gizleme.png){:.lightbox}
+[video link](https://youtu.be/iWowJBRMtpc?t=90s){:.no-lightbox} 
 
-[video link](https://youtu.be/iWowJBRMtpc?t=90s){:.no-lightbox}
 
 
