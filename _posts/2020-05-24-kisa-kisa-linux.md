@@ -15,7 +15,9 @@ Terminal komut satırında `vi .bashrc` ile .bashrc dosyasının içine giriyoru
 
 Komut | Açıklama | Örnek Kullanım | Örnek Açıklaması
 --- | --- | --- | --- | 
-`du -sh` | Dizin, Dosya boyutu | `du -sh *` | * parametresini dizinde ki tüm klasör ve dosya boyununu verir.
+**du -sh** | Dizin, Dosya boyutu | **du -sh ** | " * " parametresini dizinde ki tüm klasör ve dosya boyununu verir.
+**cat -n** | Satır sayısını öğrenmek | **cat -n rb.txt** | rb.txt dosyasının içindeki satırları satı sayısı ile birlikte gösterir.
+
 
 
 
