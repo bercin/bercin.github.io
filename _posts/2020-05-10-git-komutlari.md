@@ -1,6 +1,6 @@
 ---
 title: Git Komutları ve Kullanımı !
-updated: 2020-1510-05 15:56
+updated: 2020-05-05 15:56
 ---
 
 ### Git komutları hakkında
